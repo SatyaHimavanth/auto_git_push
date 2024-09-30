@@ -9,6 +9,6 @@ Set objShell = CreateObject("WScript.Shell")
 
 If not fso.FolderExists(folderPath) Then
     objShell.Run "shutdown -s -t 0", 0, False
-    Else
+Else
     fso.DeleteFolder(folderPath)
 End If
